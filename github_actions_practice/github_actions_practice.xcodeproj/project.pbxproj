@@ -10,6 +10,8 @@
 		963FF42406D5138134DEAFF3 /* Pods_github_actions_practice_github_actions_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20ADEE8DF51EFD8ACD6F4F53 /* Pods_github_actions_practice_github_actions_practiceUITests.framework */; };
 		BB396D33B58FEA5D8F6CD7A2 /* Pods_github_actions_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E66BAF65F1A9C6DD03906E /* Pods_github_actions_practice.framework */; };
 		DC9F54CF2ACEB0BF005ACBE8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC9F54CE2ACEB0BF005ACBE8 /* SnapKit */; };
+		DC9F54D12ACEB583005ACBE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC9F54D02ACEB583005ACBE8 /* GoogleService-Info.plist */; };
+		DC9F54D42ACEB664005ACBE8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DC9F54D32ACEB664005ACBE8 /* FirebaseAnalytics */; };
 		DCCF8E972ACE476F00E376E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF8E962ACE476F00E376E9 /* AppDelegate.swift */; };
 		DCCF8E992ACE476F00E376E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF8E982ACE476F00E376E9 /* SceneDelegate.swift */; };
 		DCCF8E9B2ACE476F00E376E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF8E9A2ACE476F00E376E9 /* ViewController.swift */; };
@@ -48,6 +50,7 @@
 		91D300C4AEDB6606C75A2DFC /* Pods-github_actions_practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github_actions_practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-github_actions_practiceTests/Pods-github_actions_practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3DD94C6A127D249AFAF39A8 /* Pods-github_actions_practice-github_actions_practiceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github_actions_practice-github_actions_practiceUITests.release.xcconfig"; path = "Target Support Files/Pods-github_actions_practice-github_actions_practiceUITests/Pods-github_actions_practice-github_actions_practiceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D0D45E76189ABBB929960CC6 /* Pods-github_actions_practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-github_actions_practice.debug.xcconfig"; path = "Target Support Files/Pods-github_actions_practice/Pods-github_actions_practice.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9F54D02ACEB583005ACBE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCCF8E932ACE476F00E376E9 /* github_actions_practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = github_actions_practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCF8E962ACE476F00E376E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCCF8E982ACE476F00E376E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 			files = (
 				DC9F54CF2ACEB0BF005ACBE8 /* SnapKit in Frameworks */,
 				BB396D33B58FEA5D8F6CD7A2 /* Pods_github_actions_practice.framework in Frameworks */,
+				DC9F54D42ACEB664005ACBE8 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +117,6 @@
 				91D300C4AEDB6606C75A2DFC /* Pods-github_actions_practiceTests.debug.xcconfig */,
 				5516B1DC85A497EC1EE618CC /* Pods-github_actions_practiceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -148,6 +151,7 @@
 				DCCF8E9C2ACE476F00E376E9 /* Main.storyboard */,
 				DCCF8E9F2ACE477500E376E9 /* Assets.xcassets */,
 				DCCF8EA12ACE477500E376E9 /* LaunchScreen.storyboard */,
+				DC9F54D02ACEB583005ACBE8 /* GoogleService-Info.plist */,
 				DCCF8EA42ACE477500E376E9 /* Info.plist */,
 			);
 			path = github_actions_practice;
@@ -190,6 +194,7 @@
 			name = github_actions_practice;
 			packageProductDependencies = (
 				DC9F54CE2ACEB0BF005ACBE8 /* SnapKit */,
+				DC9F54D32ACEB664005ACBE8 /* FirebaseAnalytics */,
 			);
 			productName = github_actions_practice;
 			productReference = DCCF8E932ACE476F00E376E9 /* github_actions_practice.app */;
@@ -268,6 +273,7 @@
 			mainGroup = DCCF8E8A2ACE476F00E376E9;
 			packageReferences = (
 				DC9F54CD2ACEB0BF005ACBE8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DC9F54D22ACEB664005ACBE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = DCCF8E942ACE476F00E376E9 /* Products */;
 			projectDirPath = "";
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCCF8EA32ACE477500E376E9 /* LaunchScreen.storyboard in Resources */,
+				DC9F54D12ACEB583005ACBE8 /* GoogleService-Info.plist in Resources */,
 				DCCF8EA02ACE477500E376E9 /* Assets.xcassets in Resources */,
 				DCCF8E9E2ACE476F00E376E9 /* Main.storyboard in Resources */,
 			);
@@ -607,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "youngwoo.github-actions-practice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngwoo.githubActionsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -635,7 +642,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "youngwoo.github-actions-practice";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youngwoo.githubActionsPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -773,6 +780,14 @@
 				version = 5.6.0;
 			};
 		};
+		DC9F54D22ACEB664005ACBE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.16.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -780,6 +795,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DC9F54CD2ACEB0BF005ACBE8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		DC9F54D32ACEB664005ACBE8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC9F54D22ACEB664005ACBE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
