@@ -19,6 +19,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
+
+    - name: Echo variables
+      run: |
+        echo "branch: ${{ github.event.inputs.branch }}"
+        ehco "version: ${{ github.event.inputs.version }}"
     
-    - name: Run tests
