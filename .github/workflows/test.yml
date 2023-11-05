@@ -19,4 +19,6 @@ jobs:
     - name: Echo variables
       run: |
         echo "version: ${{ github.event.inputs.version }}"
+        BRANCH_NAME=${GITHUB_REF#refs/heads/}
+        echo "branch: $BRANCH_NAME"
 
