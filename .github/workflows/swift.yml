@@ -27,5 +27,7 @@ jobs:
 
     - name: Do fastlane
       run: |
+        cd github_actions_practice/fastlane
+
         fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:${{ github.event.inputs.version }}
     
