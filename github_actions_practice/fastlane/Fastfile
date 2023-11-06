@@ -19,7 +19,7 @@ platform :ios do
   desc "Description of what the lane does"
 
 
-  lane :puts do |options|
+  lane :setVersion do |options|
     new_version = options[:newversion]
     changelog = options[:changelog]
 
