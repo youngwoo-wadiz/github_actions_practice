@@ -24,4 +24,8 @@ jobs:
       run: |
         echo "branch: ${{ github.event.inputs.branch }}"
         echo "version: ${{ github.event.inputs.version }}"
+
+    - name: Do fastlane
+      run: |
+        fastlane puts newversion:"${{ github.event.inputs.branch }}" changelog:"${{ github.event.inputs.version }}"
     
