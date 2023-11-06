@@ -17,6 +17,16 @@ default_platform(:ios)
 
 platform :ios do
   desc "Description of what the lane does"
+
+
+  lane :puts do |options|
+    new_version = options[:newversion]
+    changelog = options[:changelog]
+
+    puts "new_version : #{new_version}"
+    puts "changeLog : #{changelog}"
+  end
+
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
   end
