@@ -23,5 +23,5 @@ jobs:
     - name: Do fastlane
       run: |
         cd github_actions_practice/fastlane
-
-        fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:"${{GITHUB_REF#refs/heads/}}"  
+        BRANCH_NAME="${GITHUB_REF#refs/heads/}"  # 현재 브랜치 이름 가져오기
+        fastlane setVersion newversion:${{ github.event.inputs.version }} changelog:"$BRANCH_NAME"
