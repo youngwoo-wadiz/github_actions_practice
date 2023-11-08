@@ -23,6 +23,5 @@ jobs:
     - name: Do fastlane
       run: |
         cd github_actions_practice/fastlane
-        BRANCH_NAME=${GITHUB_REF#refs/heads/}
 
-        fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:"${{ BRANCH_NAME  }}"  
+        fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:"${{GITHUB_REF#refs/heads/}}"  
