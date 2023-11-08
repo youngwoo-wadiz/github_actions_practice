@@ -4,10 +4,6 @@ name: Build
 on:
   workflow_dispatch:
     inputs:
-      branch:
-        description: '배포하고자 하는 브랜치 입력'
-        required: true
-        default: 'develop'
       version:
         description: '배포 버전'
         required: true
@@ -22,12 +18,11 @@ jobs:
 
     - name: Echo variables
       run: |
-        echo "branch: ${{ github.event.inputs.branch }}"
         echo "version: ${{ github.event.inputs.version }}"
 
     - name: Do fastlane
       run: |
         cd github_actions_practice/fastlane
+        BRANCH_NAME=${GITHUB_REF#refs/heads/}
 
-        fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:${{ github.event.inputs.version }}
-    
+        fastlane setVersion newversion:${{ github.event.inputs.branch }} changelog:"${{ BRANCH_NAME  }}"  
